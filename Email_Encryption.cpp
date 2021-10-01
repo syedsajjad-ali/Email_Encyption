@@ -8,7 +8,7 @@ void main()
 	// O(1)
 	for (int i = 0; i < 127; i++)
 	{
-		askey[i] = 0;
+		askey[i] = -1;
 	}
 	
 	// O(n)
@@ -28,7 +28,7 @@ void main()
 			a = a + 32;
 		}
 		int g = askey[int(a)];
-		if (g == 0) {
+		if (g == -1) {
 			cout << "biz";
 		}
 		else {
